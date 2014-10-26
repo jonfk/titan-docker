@@ -25,7 +25,8 @@ RUN rm titan-0.5.1-hadoop2.zip
 RUN mv titan-0.5.1-hadoop2/ /usr/local/titan
 
 ## Expose Ports
-EXPOSE 22 8182:8182 8183 8184
+EXPOSE 22
+EXPOSE 8182 8183 8184
 
 # Run command
 CMD ["/usr/bin/supervisord"]
