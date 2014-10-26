@@ -3,6 +3,11 @@ MAINTAINER Jonathan Fok kan <jfokkan@gmail.com>
 
 RUN apt-get update && apt-get install -y openssh-server supervisor curl vim wget unzip
 
+## setup user
+RUN useradd docker
+RUN echo docker:docker | chpasswd
+RUN echo 'docker ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+
 ## Supervisor configs
 ADD confs/supervisor/supervisord.conf /etc/supervisor/supervisord.conf
 
