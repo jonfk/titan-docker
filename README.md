@@ -20,5 +20,5 @@ sudo dockre run -P {{ username }}/titandb
 8184: JMX Port (unlikely to be used)
 
 ####Notes:
-supervisor is use to run multiple processes and monitor them.
+supervisor is used to run multiple processes and monitor them.
 Refer to https://docs.docker.com/articles/using_supervisord/ for more information.
