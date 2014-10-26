@@ -4,7 +4,7 @@ Builds docker container for titan db (0.5.1-hadoop2)
 
 To Build
 --------
-sudo docker build -t {{username}}/titandb .
+sudo docker build -t {{ username }}/titandb .
 
 ###Ports:
 
