@@ -6,6 +6,9 @@ To Build
 --------
 sudo docker build -t {{ username }}/titandb .
 
+###To Run
+sudo dockre run -P {{ username }}/titandb
+
 ###Ports:
 
 22: sshd
@@ -15,3 +18,7 @@ sudo docker build -t {{ username }}/titandb .
 8183: RexPro for native access
 
 8184: JMX Port (unlikely to be used)
+
+####Notes:
+supervisor is use to run multiple processes and monitor them.
+Refer to https://docs.docker.com/articles/using_supervisord/ for more information.
